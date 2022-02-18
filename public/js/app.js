@@ -29115,7 +29115,7 @@ var render = function () {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "mt-32" }, [
-      _c("div", { staticClass: "max-w-xxl mx-auto" }, [
+      _c("div", { staticClass: "max-w-xxl mx-auto px-6" }, [
         _c("div", { staticClass: "max-w-2xl mx-auto" }, [
           _c("form", [
             _c("div", { staticClass: "grid grid-cols-10 gap-4" }, [
@@ -29232,7 +29232,7 @@ var render = function () {
                   "button",
                   {
                     class: [
-                      "bg-blue-500 w-full text-white mx-auto mt-6 py-2 rounded-md",
+                      "bg-blue-500 w-full text-white mx-auto sm:mt-6 py-2 rounded-md",
                       _vm.loading ? "bg-opacity-75" : "hover:bg-opacity-75",
                     ],
                     attrs: { disabled: _vm.loading },
@@ -29326,7 +29326,7 @@ var render = function () {
             ? _c("div", { staticClass: "mt-12" }, [
                 _c(
                   "div",
-                  { staticClass: "grid grid-cols-2 gap-4" },
+                  { staticClass: "grid grid-cols-1 sm:grid-cols-2 gap-4" },
                   [
                     _vm._l(_vm.filterVoiceData, function (voice) {
                       return _c(

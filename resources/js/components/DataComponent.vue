@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div class="mt-32">
-			<div class="max-w-xxl mx-auto">
+			<div class="max-w-xxl mx-auto px-6">
 				<div class="max-w-2xl mx-auto">
 					<form>
 						<div class="grid grid-cols-10 gap-4">
@@ -25,7 +25,7 @@
 							</div>
 							<div class="col-span-10">
 								<button @click.prevent="getData" 
-									:class="['bg-blue-500 w-full text-white mx-auto mt-6 py-2 rounded-md', loading ? 'bg-opacity-75' : 'hover:bg-opacity-75']"
+									:class="['bg-blue-500 w-full text-white mx-auto sm:mt-6 py-2 rounded-md', loading ? 'bg-opacity-75' : 'hover:bg-opacity-75']"
 									:disabled="loading"
 								>
 									<loading v-if="loading"/>
@@ -50,7 +50,7 @@
 					</form>
 
 					<div class="mt-12" v-if="filterVoiceData.length > 0 && filterSMSData.length > 0">
-						<div class="grid grid-cols-2 gap-4">
+						<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 							<div class="bg-white shadow overflow-hidden rounded-md border col-span-1" v-for="voice in filterVoiceData" :key="voice.usage">
 								<div role="list" class="divide-y divide-gray-200">
 									<div class="px-6 py-4 font-bold">
